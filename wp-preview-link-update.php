@@ -32,7 +32,7 @@
 
 function update_permalink_for_drafts( $url, $post, $leavename=false ) {
 	if ( $post->post_status == 'draft' ) {
-		$url = preg_replace('/aysha.me\//', 'aysha.me/preview', $url);
+		$url = preg_replace('/localhost:3000\//', 'your.site.com', $url);
 	}
 	return $url;
 }
